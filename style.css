@@ -1,0 +1,134 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%) ;
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background-color: hsl(206.25deg 47.06% 93.33%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.top-container {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: 40px 0px 0px 40px;
+}
+.top-container .title {
+    color: hsl(179.12deg 61.26% 43.53%);
+    font-weight: 700;
+    font-size: 24px;
+}
+.top-container .trial {
+    color: var(--BrightYellow);
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.top-container .desc {
+    color: var(--GrayishBlue);
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 275px;
+    /* background-color: var(--Cyan); */
+    position: absolute;
+    bottom: 0;
+}
+.bottom-container .left {
+    width: 50%;
+    height: 100%;
+    background-color: var(--Cyan);
+    display: flex;
+    flex-direction: column;
+
+}
+.left .period {
+    color: var(--LightGray);
+    font-weight: bold;
+    margin:40px 0px 0px 40px;
+    font-size: 21px;
+}
+.left .price {
+    color: var(--LightGray);
+    font-weight: bold;
+    margin: 20px 0px 0px 40px;
+    font-size: 31px;    
+}
+.price .subtime {
+    font-size: 18px;
+    color: hsl(204, 43%, 93%);
+    font-weight: 200;
+    opacity: 0.4;
+    margin-left: 20px;
+}
+
+.info {
+    color: var(--LightGray);
+    font-weight: 400;
+    margin: 20px 0px 0px 40px;
+}
+.sub {
+    width: 240px;
+    height: 50px;
+    background-color: var(--BrightYellow);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 0px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bottom-container .right {
+    width: 50%;
+    height: 100%;
+    background-color: hsl(179.48deg 47.15% 51.76%);
+    display: flex;
+    flex-direction: column;
+}
+.right .ques {
+    color: var(--LightGray);
+    font-weight: bold;
+    margin: 40px 0px 0px 40px;
+    font-size: 21px;
+}
+.benfits {
+    font-weight: 400;
+    color: var(--LightGray);
+    opacity: 0.8;
+    width: 230px;
+    margin:15px 0px 0px 0px;
+    list-style: none;
+    line-height: 24px;
+}
